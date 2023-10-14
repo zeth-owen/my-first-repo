@@ -1,6 +1,5 @@
 .centered-quarterly_menu {
   text-align: center;
-/*   width: 800px; */
   color: #ffffff;
 }
 
@@ -9,7 +8,7 @@ h1,h2,h3,h4 {
   font-family: "Croissant One", cursive;
   margin-bottom: 20px;
   color: #ffffff;
-  text-align: center;
+  text-align: center
  
 }
 .loction_button {
@@ -21,6 +20,7 @@ h1,h2,h3,h4 {
 p {
   color: #ffffff;
   text-align: center
+ 
   
 }
 
@@ -51,10 +51,11 @@ h4 {
 }
 
 body {
-  background-image: url(https://drive.google.com/uc?export=view&id=1KVDapld513gDp4XOaLft0qfmeyxhszdV);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://drive.google.com/uc?export=view&id=1KVDapld513gDp4XOaLft0qfmeyxhszdV);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-attachment: fixed;
 }
 
 a {
@@ -66,9 +67,9 @@ div {
 }
 
 .flex {
-  max-width: 50% ; 
+  max-width: 75%; 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -90,27 +91,35 @@ div {
   width: 50px;
 }
 
-#image {
-height:200px;
-}
+
 
 #logo,.centered-quarterly_menu,.tmf,.lh {
   display:none
 }
 
-.nav_bar {
+.navbar {
+  background-color: #990000;
+  padding: 12px 6px;
+
+}
+
+.navbar .navLinks {
+  max-width: 500px !important;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
-  color: #ffffff;
-  list-style-type: none;
-  margin-bottom: 35px;
-  background-color: #990000         
-}
+}          
 
-.nav_bar li {
-  
+
+.navbar .navLinks li a {
+  padding: 4px 2px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .hours {
@@ -125,17 +134,37 @@ address {
  color: #ffffff;
   text-align: center
 }
+
 .about-us {
-  background-color: #ffffcc;
-  color: #990000;
-  text-align: left
+  display:flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f6daa8; 
+  justify-content: space-evenly;
+  border: 3px solid black;
+
 }
+
+
 .description1 {
-  color:#990000
+  width: 35%;
+  color:#0c0c0c;
+  font-family: "Croissant One", cursive;
+  line-height: 2;
 }
-#au {
-  color:#990000
-} 
+
+.image {
+  width: 35%;
+ }
+
+ .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px
+ }
+ .wrapsides {
+  text-decoration: underline;
+ }
 
 .hours li span {
  display: inline-block;
@@ -149,6 +178,47 @@ address {
   text-align: left
 }
 
+
+.footer {
+  background-color: #990000;
+  padding: 30px 15px;
+  justify-content: space-evenly;
+}
+
+.footer .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+}
+
+
+.footer .socialMedia a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #fffffd;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.footer .socialMedia img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
 
 
 
